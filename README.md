@@ -10,3 +10,9 @@ Objetivo:
 • https://www.youtube.com/watch?v=Jws7BHrts6g&list=PLsoiO2Be-2z8BfsSkspJfDiuKeC9-LSca&index=1
 
 Para essa atividade, pediremos a entrega inicial do projeto no GITHUB.
+
+Ao utilizar, recomenda-se uma virtualbox, de preferência uma isso do windows 7
+
+Além das ferramentas:
+Nasm
+e o resto veremos em um futuro proximo
