@@ -11,8 +11,10 @@ Objetivo:
 
 Para essa atividade, pediremos a entrega inicial do projeto no GITHUB.
 
-Ao utilizar, recomenda-se uma virtualbox, de preferência uma isso do windows 7
+Ao utilizar, recomenda-se uma virtualbox, de preferência uma iso do windows 7
 
 Além das ferramentas:
 Nasm
 e o resto veremos em um futuro proximo
+
+Em sistemas Windows mais recentes visite o perfil de @Joaopedronb21 no projeto simple-so
