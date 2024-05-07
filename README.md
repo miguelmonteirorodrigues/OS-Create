@@ -15,9 +15,11 @@ Neste repositório será documentado todo o passo a passo da criação de um SO 
 
 <h2>Necessario:</h2>
 
-- Nasm(Netwide Assembler): O Nasm é um software focado para criar projetos em arquiteturas de CPUs x86, utilizando a linguagem de baixo nível Assembly.
+- Nasm: O Nasm é um software focado para criar projetos em arquiteturas de CPUs x86, utilizando a linguagem de baixo nível Assembly.
 
 - Fergo Raw Image Maker: Este software cria um arquivo de imagem de dados brutos para usar em pendrives, HDs, etc. Onde pode ser definido o cilindro, a trilha e o setor a serem usados ​​e adiciona qualquer arquivo que desejar.
+
+- Rufus: Software amplamente utilizado para carregar imagens/.iso de SO em um pendrive para torná-lo bootável.
 
 <h2>Observações</h2>
 
@@ -25,21 +27,24 @@ Neste repositório será documentado todo o passo a passo da criação de um SO 
 
 - Se optar por rodar em sistemas Windows mais recentes visite o perfil de @Joaopedronb21 no projeto simple-so, onde o mesmo descreve como resolver o problema de dependência do Fergo Raw Image Maker.
 
-- Utilizado o VirtualBox para testar o OSBegin, o armazenamento dessa VM foi alterado para ler .bin e assim dar boot no sistema.
-  
+- Utilizado o VirtualBox para testar o OSBegin, o armazenamento dessa VM foi alterado para ler `.bin` e assim dar boot no sistema.
+
+- Importante salientar sobre a necessidade de formatar o pendrive que será utilizado utilizando os códigos fornecido no VirtualBox, ensinado na playlist do canal KiddieOS.Community que estamos utilizando como referência.
 
 <h2>Como testar o SO</h2>
 
-- Utilize o Nasm para converter os arquivos .asm para gerar arquivos os arquivos .bin
+- Utilize o Nasm para converter os arquivos .asm para gerar arquivos os arquivos `.bin`
   
-- Execute o arquivo Assembler.bat para gerar os arquivos .bin
+- Execute o arquivo Assembler.bat para gerar os arquivos `.bin`
 
 - Para compilar os arquivos .bin, abra o FergoRaw.exe e adicione os 3 arquivos binários gerados pelo Nasm, na mesma ordem citada abaixo:
 
   - bootloader.asm
   - kernel.asm
   - window.asm
-  
+
+- Após gerar o arquivo `.img`, execute o Rufus para montar a imagem do SO em um pendrive
+
 - Em seguida, basta testar numa máquina virtual ou em um computador físico, alterando a ordem de boot na BIOS
   
 <h2>O OSBegin conta com as seguintes caracteristicas:</h2>
