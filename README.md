@@ -16,11 +16,14 @@ Neste repositório será documentado todo o passo a passo da criação de um SO 
 <h2>Necessario:</h2>
 
 - Nasm: O Nasm é um software focado para criar projetos em arquiteturas de CPUs x86, utilizando a linguagem de baixo nível Assembly.
+- https://nasm.us/
 
 - Fergo Raw Image Maker: Este software cria um arquivo de imagem de dados brutos para usar em pendrives, HDs, etc. Onde pode ser definido o cilindro, a trilha e o setor a serem usados ​​e adiciona qualquer arquivo que desejar.
+- https://www.fergonez.net/softwares/fraw
 
 - Rufus: Software amplamente utilizado para carregar imagens/.iso de SO em um pendrive para torná-lo bootável.
-
+- https://rufus.ie/pt_BR/
+  
 <h2>Observações</h2>
 
 - Ao utilizar, recomenda-se uma virtualbox, de preferência uma iso do windows 7
@@ -39,9 +42,9 @@ Neste repositório será documentado todo o passo a passo da criação de um SO 
 
 - Para compilar os arquivos .bin, abra o FergoRaw.exe e adicione os 3 arquivos binários gerados pelo Nasm, na mesma ordem citada abaixo:
 
-  - bootloader.asm
-  - kernel.asm
-  - window.asm
+  - bootloader.asm na posição 1º
+  - kernel.asm na `posição 2`, ela ocupará a `3º` também
+  - window.asm na `posição 4`, onde ocupará a `5º`
 
 - Após gerar o arquivo `.img`, execute o Rufus para montar a imagem do SO em um pendrive
 
